@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "despesas",
+  "info": {
+    "singularName": "despesa",
+    "pluralName": "despesas",
+    "displayName": "despesa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "dinheiro",
+        "vale",
+        "pix",
+        "cobrador",
+        "motorista",
+        "diesel",
+        "manutencao"
+      ],
+      "required": true
+    },
+    "value": {
+      "type": "float",
+      "required": true
+    },
+    "day": {
+      "required": true,
+      "type": "date"
+    }
+  }
+}
