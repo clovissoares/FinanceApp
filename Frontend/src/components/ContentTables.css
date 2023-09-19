@@ -1,0 +1,54 @@
+.table {
+    width: 100%;
+    background-color: var(--background-color-highlight);
+    margin: 1rem;
+    border-radius: .7rem;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    padding: 0;
+    height: fit-content;
+    text-align: center;
+}
+
+.table > h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+    padding: .6rem;
+    border: 1px solid rgb(51 65 85);
+    border-radius: .7rem .7rem 0 0;
+}
+
+.table > div {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(51 65 85);
+    border-top: none;
+}
+
+.table > div:last-child {
+    border-radius: 0 0 .7rem .7rem;
+}
+
+.table > div p {
+    width: 100%;
+}
+
+.table > div p:first-child {
+    border-right: 1px solid rgb(51 65 85);
+    font-weight: 700;
+}
+
+.table:last-child > div p:nth-child(2) {
+    border-right: 1px solid rgb(51 65 85);
+    font-weight: 700;
+}
+
+.table:last-child > div p:nth-child(1) {
+    border-right: 1px solid rgb(51 65 85);
+    font-weight: 400 !important;
+}
+
+.table button {
+    border-left: 1px solid rgb(51 65 85);
+}
